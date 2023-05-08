@@ -98,6 +98,17 @@ header p {
   margin-bottom: 3.2rem;
 }
 
+.about-me-btn {
+  margin-top: 2.4rem;
+  display: flex;
+}
+
+.about-me-btn a {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
 /* ********************************************************************************** */
 /* MY SKILLS */
 .skills-img img {
