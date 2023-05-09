@@ -17,9 +17,12 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="main-nav">
         <a href="#" class="logo">
           <ion-icon name="logo-xing" class="logo-img"></ion-icon>
@@ -33,17 +36,22 @@
         </a>
 
         <ul>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#my-skills">Skills</a></li>
+          <li><a href="#about-me" class="main-nav-link">About me</a></li>
+          <li><a href="#my-skills" class="main-nav-link">Skills</a></li>
           <li>
             <a
               href="https://1drv.ms/b/s!AsISWHqoRa1EhKkFmwdJbj6BqGTCkg?e=5uovpe"
               target="_blank"
-              class="btn"
+              class="btn main-nav-link"
               >Download CV</a
             >
           </li>
         </ul>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </nav>
 
       <div class="section-hero container grid grid-hero grid--center-v">
@@ -171,8 +179,8 @@
             <p>
               Eric
               <span style="color: #002434; font-weight: 400; font-size: 1.8rem">
-                | Copyright &copy; 2023</span
-              >
+                | Copyright &copy; <span id="year"></span
+              ></span>
             </p>
           </a>
 
